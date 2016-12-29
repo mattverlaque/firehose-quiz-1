@@ -1,0 +1,13 @@
+<h1>This is some static content.</h1>
+<p>Here's some more static content. It's very static-y.</p>
+<%= @allgyms.inspect %>
+<%= simple_form_for @newgym do |f| %>
+  <%= f.input :name, label: "Gym Name" %>
+  <%= f.input :address1 %>
+  <%= f.input :address2 %>
+  <%= f.input :city %>
+  <%= f.input :state %>
+  <%= f.input :zip %>
+  <%= f.input :website %>
+  <%= f.submit 'Create', class: 'btn btn-success' %>
+<% end %>
